@@ -1,4 +1,4 @@
-**Palvelinten hallinnan kurssin loppuprojekti**
+# **Palvelinten hallinnan kurssin loppuprojekti**
 
 Kurssin loppuprojektina päätin tehdä salt modulin/tilan, jolla pystytetään web-kehitysympäristö modifioitua LAMP-stack:ia (Linux, Apache, MySQL & PHP) käyttäen. Aloin tekemään projektia alkuperäisen mukaan käyttäen MySQL:ää tietokantana, mutta sen asennus osoittautui turhan työlääksi ja hankalaksi joten päätin korvata MySQL:n PostgreSQL:llä. Projektin ympäristönä käytin Vagrantilla pystyttämääni kahden Fedora-linux koneen ympäristöä.
 Aloitin projektin asentamalla tarvittavat komponentit manuaalisesti 'master'-palvelimelle käyttäen seuraavia komentoja:
@@ -60,7 +60,7 @@ Ensimmäisen ajon jälkeen testasin että kaikki kolme asettamaani sivua vastaav
 
 3. items.php, tämän sivun toiminta todistaa että apachessa oleva php-sivu ja PostgreSQL-tietokanta toimivat yhdessä.
    
-   <img width="340" alt="kuva4" src="https://github.com/user-attachments/assets/133fe491-9995-4662-b1cf-696718725c00" />
+   <img width="340" alt="kuva4" src="https://github.com/user-attachm 2025 ents/assets/133fe491-9995-4662-b1cf-696718725c00" />
 
 Pelkän 3. kohdan testaaminen olisi riittänyt asennuksen testaamiseen sillä siinä on mukana kaikki asennetut komponentit, ja tämä on helppo testata myös curl-työkalulla master palvelimelta, 'curl http://192.168.88.102/items.php'.
 
@@ -71,3 +71,8 @@ Lopuksi todistin vielä modulini/tilani idempotenttiuden ajamalla se uudelleen, 
 <img width="672" alt="kuva2" src="https://github.com/user-attachments/assets/cd709e98-55b1-4da2-b796-31f864ba356c" />
 
 Toivottavasti tämä salt:lla automatisoitu LAPP-stack (Linux, Apache, PostgreSQL & PHP) helpottaa ja nopeuttaa kehitysympätistöjen pystyttämistä tulevaisuuden PHP-projekteissa. Tähän moduliin/tilaan on helppo lisätä muiden mahdollisten softaprojektin kehitystyökalujen asennuksia, esim. git version hallintaan.
+
+## **Lähteet:**
+1. Karvinen T., 2025 https://terokarvinen.com/palvelinten-hallinta/#laksyt Luettu 4.5.2025
+2. Digitalocean, 2025 https://www.digitalocean.com/community/tutorials/how-to-install-lamp-stack-on-ubuntu Luettu 4.5.2025
+3. Salt Project, https://docs.saltproject.io/en/master/ref/states/all/salt.states.cmd.html Luettu 4.5.2025
