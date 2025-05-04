@@ -1,6 +1,6 @@
 **Palvelinten hallinnan kurssin loppuprojekti**
 
-Kurssin loppuprojektina päästin tehdä salt modulin/tilan pystytetään web-kehitysympäristö modifioitua LAMP-stack:ia (Linux, Apache, MySQL & PHP) käyttäen. Aloin tekemään projektia alkuperäisen mukaan käyttäen MySQL:ää tietokantana, mutta sen asennus osoittautui turhan työlääksi ja hankalaksi joten päätin korvata MySQL:n PostgreSQL:llä. Projektin ympäristönä käytin Vagrantilla pystyttämääni kahden Fedora-linux koneen ympäristöä.
+Kurssin loppuprojektina päätin tehdä salt modulin/tilan, jolla pystytetään web-kehitysympäristö modifioitua LAMP-stack:ia (Linux, Apache, MySQL & PHP) käyttäen. Aloin tekemään projektia alkuperäisen mukaan käyttäen MySQL:ää tietokantana, mutta sen asennus osoittautui turhan työlääksi ja hankalaksi joten päätin korvata MySQL:n PostgreSQL:llä. Projektin ympäristönä käytin Vagrantilla pystyttämääni kahden Fedora-linux koneen ympäristöä.
 Aloitin projektin asentamalla tarvittavat komponentit manuaalisesti 'master'-palvelimelle käyttäen seuraavia komentoja:
 - sudo apt-get install apache2
 - sudo apt-get install curl (testausta varten)
