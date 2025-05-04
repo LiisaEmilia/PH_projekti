@@ -8,7 +8,7 @@ php:
   pkg.installed
 libapache2-mod-php:
   pkg.installed
-php-pqsql:
+php-pgsql:
   pkg.installed
 /var/www/html/index.html:
   file.managed:
@@ -16,3 +16,7 @@ php-pqsql:
 /etc/apache2/mods-enabled/dir.conf:
   file.managed:
     - source: salt://lamp/apache2/dir.conf
+/var/www/html/info.php:
+  file.managed:
+    - source: salt://lamp/apache2/info.php
+
