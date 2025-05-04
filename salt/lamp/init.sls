@@ -13,3 +13,6 @@ php-pqsql:
 /var/www/html/index.html:
   file.managed:
     - source: salt://lamp/apache2/index.html
+/etc/apache2/mods-enabled/dir.conf:
+  file.managed:
+    - source: salt://lamp/apache2/dir.conf
