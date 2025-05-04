@@ -19,14 +19,12 @@ php-pgsql:
 /var/www/html/info.php:
   file.managed:
     - source: salt://lamp/apache2/info.php
-/var/www/html/items.php
+/var/www/html/items.php:
   file.managed:
     - source: salt://lamp/apache2/items.php
 /home/vagrant/demo.sql:
   file.managed:
     - source: salt://lamp/psql/demo.sql
-'sudo -u postgres psql -a -f /home/vagrant/demo.sql':
+'sudo -u postgres psql -a -f /home/vagrant/demo.sql;sudo systemctl restart apache2':
   cmd.run:
-    - watch:
-      - file: /home/vagrant/demo.sql
-
+    - unless: sudo -u postgres psql -lqt | grep demo
