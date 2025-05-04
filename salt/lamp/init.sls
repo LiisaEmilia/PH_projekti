@@ -26,7 +26,7 @@ php-pgsql:
   file.managed:
     - source: salt://lamp/psql/demo.sql
 'sudo -u postgres psql -a -f /home/vagrant/demo.sql':
-  cmd.run
+  cmd.run:
     - watch:
       - file: /home/vagrant/demo.sql
 
