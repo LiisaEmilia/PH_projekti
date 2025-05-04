@@ -15,6 +15,21 @@ Todettuani PHP asennuksen toimivaksi siirryin PostgreSQL tietokannan pariin ja l
 
 <img width="340" alt="kuva4" src="https://github.com/user-attachments/assets/a6a95c99-7630-435e-8538-6b69779497a2" />
 
-Nyt kun paikallinen stack oli kunnossa oli aika lähteä tekemään näistä salt-moduli joka asentaa tämän kaiken kerralla.
+Nyt kun paikallinen stack oli kunnossa oli aika lähteä tekemään näistä salt-moduli joka asentaa tämän kaiken kerralla. Olin tätä varten luonut github:iin repositoryn 'PH_projekti', aloitin salt säätämisen kloonaamalla tämän repositoryn vagrant-käyttäjän kotihakemistoon. Seuraava kuva kertoo projektin hakemistorakenteen.
+
+  PH_projekti/
+  
+  └── salt
+  
+      └── lamp
+      
+          ├── apache2
+          
+          └── psql
+
+Tämän jälkeen tein symbolisella linkillä linkityksen master palvelimen /srv/-hakemiston alle seuraavasti 'sudo ln -s /home/vagrant/PH_projekti/salt/ /srv/', tämä siksi että salt:lla pystyy ajamaan modulin suoraan orjille (ja git:n kanssa pelaaminen on mielestäni näin helpompaa). Hakemistorakenteen luotuani ja symbolisen linkin tehtyäni lisäsin edellisessä vaiheessa tekemäni tiedostot hakemistorakenteeseen:
+
+- cp /var/www/html/* ~/PH_projekti/salt/lamp/apache2/
+- 
 
 
