@@ -60,7 +60,7 @@ Ensimmäisen ajon jälkeen testasin että kaikki kolme asettamaani sivua vastaav
 
 3. items.php, tämän sivun toiminta todistaa että apachessa oleva php-sivu ja PostgreSQL-tietokanta toimivat yhdessä.
    
-   <img width="340" alt="kuva4" src="https://github.com/user-attachm 2025 ents/assets/133fe491-9995-4662-b1cf-696718725c00" />
+   <img width="340" alt="kuva4" src="https://github.com/user-attachments/assets/58b671cc-efc3-4e8d-aa30-35c3199b9317" />
 
 Pelkän 3. kohdan testaaminen olisi riittänyt asennuksen testaamiseen sillä siinä on mukana kaikki asennetut komponentit, ja tämä on helppo testata myös curl-työkalulla master palvelimelta, 'curl http://192.168.88.102/items.php'.
 
