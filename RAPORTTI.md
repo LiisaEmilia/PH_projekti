@@ -70,7 +70,7 @@ Lopuksi todistin vielä modulini/tilani idempotenttiuden ajamalla se uudelleen, 
 
 <img width="672" alt="kuva2" src="https://github.com/user-attachments/assets/cd709e98-55b1-4da2-b796-31f864ba356c" />
 
-Toivottavasti tämä salt:lla automatisoitu LAPP-stack (Linux, Apache, PostgreSQL & PHP) helpottaa ja nopeuttaa kehitysympätistöjen pystyttämistä tulevaisuuden PHP-projekteissa. Tähän moduliin/tilaan on helppo lisätä muiden mahdollisten softaprojektin kehitystyökalujen asennuksia, esim. git version hallintaan.
+Toivottavasti tämä salt:lla automatisoitu LAPP-stack (Linux, Apache, PostgreSQL & PHP) helpottaa ja nopeuttaa kehitysympäristöjen pystyttämistä tulevaisuuden PHP-projekteissa. Tähän moduliin/tilaan on helppo lisätä muiden mahdollisten softaprojektin kehitystyökalujen asennuksia, esim. git version hallintaan.
 
 ## **Lähteet:**
 1. Karvinen T., 2025 https://terokarvinen.com/palvelinten-hallinta/#laksyt Luettu 4.5.2025
